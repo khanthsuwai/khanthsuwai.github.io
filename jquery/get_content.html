@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <h3>Today is <i>Nov 1 </i>We start <b>learning</b></h3>
+    <p class="p_tag"></p>
+    <h3 class="h3_tag"></h3>
+
+    Name:: <input type="text" name=" name" id="name">
+    <button id="add">ADD</button>
+    <br><br>
+
+    <button id="click_me">Click Me</button>
+
+    <script src="jquery.min.js"></script>
+
+    <script>
+
+        // $(selector).action|call back function(){
+
+        // })
+
+        $(document).ready(function () {
+
+            $('#click_me').click(function () {
+                let h3 = $('h3').text();
+                console.log(h3);
+
+                let h3_html = $('h3').html();
+                console.log(h3_html);
+            })
+
+            $('#add').click(function () {
+
+                let get_name = $('#name').val();
+                $('.p_tag').text(get_name);
+                $('.h3_tag').html(get_name);
+            })
+
+
+        })
+    </script>
+</body>
+
+</html>

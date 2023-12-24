@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Yangon/ Contact</title>
+    <!-- fav icon -->
+    <link rel="shortcut icon" href="../assets/img/logo.png" type="image/x-icon" sizes="16x16">
+    <!-- bootstrap_css -->
+    <link rel="stylesheet" href="../assets/libs/bootstrap/css/bootstrap.min.css">
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="../assets/libs/fontawesome/css/all.min.css">
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Preahvihear&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nova+Square&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap" rel="stylesheet">
+    <!-- custom css -->
+    <link rel="stylesheet" href="../css/custom.css">
+    <style>
+        .customform {
+            height: 500px;
+            background-color: #ffff;
+            border: 1px solid #dddd;
+            padding: 30px;
+        }
+
+        .iconsanddetails {
+            padding: 5px 10px;
+        }
+
+        /* start faq */
+        @import url(https://fonts.googleapis.com/css?family=Raleway);
+
+        body {
+            color: #333;
+            background: #fcfcfc;
+            font-family: 'Raleway', sans-serif;
+            overflow-x: hidden;
+        }
+
+        .faq-header {
+            border-bottom: 1px dotted #ccc;
+            padding: 10px;
+        }
+
+        .faq-content {
+            margin: 0 auto;
+        }
+
+        .faq-question {
+            padding: 5px 0;
+            border-bottom: 1px dotted #ccc;
+        }
+
+        .panel-title {
+            width: 100%;
+            position: relative;
+            margin: 0;
+            padding: 10px 10px 0 48px;
+            display: block;
+            cursor: pointer;
+        }
+
+        .panel-content {
+            padding: 0px 14px;
+            margin: 0 40px;
+            height: 0;
+            overflow: hidden;
+            z-index: -1;
+            position: relative;
+            opacity: 0;
+            -webkit-transition: .4s ease;
+            -moz-transition: .4s ease;
+            -o-transition: .4s ease;
+            transition: .4s ease;
+        }
+
+        .panel:checked~.panel-content {
+            height: auto;
+            opacity: 1;
+            padding: 14px;
+        }
+
+        .plus {
+            position: absolute;
+            margin-left: 20px;
+            margin-top: 4px;
+            z-index: 5;
+            font-size: 22px;
+            line-height: 100%;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            -o-user-select: none;
+            user-select: none;
+            -webkit-transition: .2s ease;
+            -moz-transition: .2s ease;
+            -o-transition: .2s ease;
+            transition: .2s ease;
+        }
+
+        .panel:checked~.plus {
+            -webkit-transform: rotate(45deg);
+            -moz-transform: rotate(45deg);
+            -o-transform: rotate(45deg);
+            transform: rotate(45deg);
+        }
+
+        .panel {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Start Progress -->
+    <div id="progress">
+        <span id="progressvalues"></span>
+    </div>
+    <!-- End Progress -->
+
+    <!-- Start Navbar -->
+    <nav class="navbar">
+        <div class="container-fluid">
+            <a href="#" class="navbar-brand">
+                <img src="../assets/img/logo.png" alt="" class="logo img-fluid">
+                <h1 class="float-end mt-3 ">Hotel Yangon</h1>
+            </a>
+            <ul class="nav text-white">
+                <li class="nav-item p-2 d-none d-md-block">
+                    <form action="">
+                        <input type="search" placeholder="Search here ..." class="search_bar">
+                        <i class="fa fa-search"></i>
+                    </form>
+                </li>
+                <li class="nav-item p-2 d-none d-md-block">
+                    <a href="../others/signin.html" class="btn" id="signin">Sign in/up</a>
+                </li>
+                <li class="nav-item p-2">
+                    <a href="../others/booking.html" class="btn">Book Now</a>
+                </li>
+
+                <button class="navbar-toggler d-block d-md-none" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </ul>
+        </div>
+        <hr class="divided">
+    </nav>
+
+    <div class="container subnav-box">
+        <div class="navbar-expand-md">
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-lg-4">
+                    <li class="nav-item sub_nav ">
+                        <a href="../index.html" class="nav-link px-md-3 mx-lg-4"><i
+                                class="fa-solid fa-house me-2"></i>HOME</a>
+                    </li>
+                    <li class="nav-item sub_nav">
+                        <a href="../others/rooms.html" class="nav-link px-md-3 mx-lg-4"><i
+                                class="fa-solid fa-bed me-2"></i>ROOMS</a>
+                    </li>
+                    <li class="nav-item dropdown sub_nav">
+                        <a href="../others/packages.html" class="nav-link dropdown-toggle px-md-3 mx-lg-4" type="button"
+                            data-bs-toggle="dropdown"><i class="fa-solid fa-briefcase me-2"></i>PACKAGES</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="../others/packages.html #meeting" class="dropdown-item">Meeting & Events</a>
+                            </li>
+                            <li><a href="../others/packages.html #loveshoot" class="dropdown-item">Dreamy Love Shoot</a>
+                            </li>
+                            <li><a href="../others/packages.html #weddings" class="dropdown-item">Weddings</a></li>
+                            <li><a href="../others/packages.html #honeymoon" class="dropdown-item">Honeymoon</a></li>
+                            <li><a href="../others/packages.html #celebration" class="dropdown-item">Celebration</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item sub_nav ">
+                        <a href="../others/facilitiesandservices.html" class="nav-link px-md-3 mx-lg-4"><i
+                                class="fa-solid fa-list me-2"></i>FACILITIES</a>
+                    </li>
+                    <li class="nav-item sub_nav">
+                        <a href="../others/contact.html" class="nav-link px-md-3 mx-lg-4"><i
+                                class="fa-solid fa-phone me-2"></i>CONTACT</a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+    <!-- End Navbar -->
+
+    <!-- Start Contact Section -->
+    <div class="container-fluid">
+        <div class="col text-center">
+            <h3 class="titles my-4">Our Location</h3>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-6">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d61108.3507718129!2d96.18578653086254!3d16.812860931371073!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30c192d33b83bce5%3A0x7e1eb65b03467802!2sThuwanna%20park!5e0!3m2!1sen!2smm!4v1696234613625!5m2!1sen!2smm"
+                        width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade" class="">
+                    </iframe>
+                </div>
+                <div class="col-12 col-md-6 location">
+                    <h4 class="text-center">CONTACT US</h4>
+                    <div class="contact_detail">
+                        <div class="iconsanddetails">
+                            <i class="fa-solid fa-location-dot fa-xl p-1"></i>
+                            <small>Hotel Yangon, Thanthumar Road, Thingyangyun Township, Yangon</small>
+                        </div>
+                        <div class="iconsanddetails">
+                            <i class="fa-solid fa-phone fa-xl p-1"></i>
+                            <small>Hotline : (+95 9)000 123 123</small>
+                        </div>
+                        <div class="iconsanddetails">
+                            <i class="fa-solid fa-phone fa-xl p-1"></i>
+                            <small>Tel : (+95 9)793214976,771382800</small>
+                        </div>
+                        <div class="iconsanddetails">
+                            <i class="fa-solid fa-envelope fa-xl p-1"></i>
+                            <small>reservation@hotelyangon.com.mm</small>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!-- End Contact Section -->
+
+    <!-- Start Join Us Section -->
+    <section class="container my-3">
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <h3 class="titles my-3">Your Comments To Us</h3>
+            </div>
+        </div>
+        <div class="row my-3">
+            <div class="col-12 col-md-4 mb-3 customform">
+                <form action="">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <input type="text" name="name" id="name" class="form-control mb-2" placeholder="Your Name">
+                            <input type="email" name="email" id="email" class="form-control mb-2"
+                                placeholder="Your Email">
+                            <input type="text" name="city" id="city" class="form-control mb-2" placeholder="Your City">
+                            <input type="number" name="zipcode" id="zipcode" class="form-control mb-2"
+                                placeholder="Zip Code">
+                            <input type="text" name="subject" id="subject" class="form-control mb-2"
+                                placeholder="SUBJECT">
+                            <textarea name="bio" id="bio" class="form-control mb-2" rows="5"
+                                placeholder="MESSAGE"></textarea>
+                            <div class="d-grid mt-3">
+                                <button type="submit" class="btn rounded-0 btn-lg">SUBMIT</button>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="col-12 col-md-8">
+                <div class="faq-header fs-2">Frequently Asked Questions</div>
+
+                <div class="faq-content">
+                    <div class="faq-question">
+                        <input id="q1" type="checkbox" class="panel">
+                        <div class="plus">+</div>
+                        <label for="q1" class="panel-title">At what time can we check into our room?</label>
+                        <div class="panel-content">
+                            Customers are expected to arrive for 4PM. We will gladly provide you access to your room
+                            earlier if possible.
+                        </div>
+                    </div>
+
+                    <div class="faq-question">
+                        <input id="q2" type="checkbox" class="panel">
+                        <div class="plus">+</div>
+                        <label for="q2" class="panel-title">What is the checkout time?</label>
+                        <div class="panel-content">
+                            Customers must check out for 11AM. However, we can keep your luggage for free if need be.
+                        </div>
+                    </div>
+
+                    <div class="faq-question">
+                        <input id="q3" type="checkbox" class="panel">
+                        <div class="plus">+</div>
+                        <label for="q3" class="panel-title"> Can I keep my room after the standard check out
+                            time?</label>
+                        <div class="panel-content">
+                            Hotel Yangon does whatever it can to keep its customers satisfied. We will gladly hold your
+                            room until 2PM, on check out day, depending on occupation and for 25$ plus tax. Inquire at
+                            the reception.
+                        </div>
+                    </div>
+
+                    <div class="faq-question">
+                        <input id="q4" type="checkbox" class="panel">
+                        <div class="plus">+</div>
+                        <label for="q4" class="panel-title">Is there Wi-Fi in every room?</label>
+                        <div class="panel-content">
+                            High speed wireless internet is offered for free throughout the hotel; whether it be rooms,
+                            poolside, terrace, communal areas or breakfast area.
+                        </div>
+                    </div>
+
+                    <div class="faq-question">
+                        <input id="q5" type="checkbox" class="panel">
+                        <div class="plus">+</div>
+                        <label for="q5" class="panel-title">Is there a breakfast included in our stay? If so, at what
+                            time is it served?</label>
+                        <div class="panel-content">
+                            Breakfast is offered for free to our customers, from 5:30AM to 9:30AM on weekdays and from
+                            6:30AM to 10:30AM on weekends.
+                        </div>
+                    </div>
+
+                    <div class="faq-question">
+                        <input id="q6" type="checkbox" class="panel">
+                        <div class="plus">+</div>
+                        <label for="q6" class="panel-title">Is there a restaurant on location?</label>
+                        <div class="panel-content">
+                            Except for the breakfast, there is no restaurant in our hotel. However, within short driving
+                            distance, you'll have access to a wide variety of restaurants.
+                        </div>
+                    </div>
+
+                    <div class="faq-question">
+                        <input id="q7" type="checkbox" class="panel">
+                        <div class="plus">+</div>
+                        <label for="q7" class="panel-title">Is there an elevator in the hotel?</label>
+                        <div class="panel-content">
+                            No. Our two-story establishment does not have an elevator.
+                        </div>
+                    </div>
+
+                    <div class="faq-question">
+                        <input id="q8" type="checkbox" class="panel">
+                        <div class="plus">+</div>
+                        <label for="q8" class="panel-title">IWhere can we park our vehicle?</label>
+                        <div class="panel-content">
+                            We have a large parking area which can fit any type of vehicle. Buses and trailer trucks can
+                            park safely behind the hotel.
+                        </div>
+                    </div>
+
+                    <div class="faq-question">
+                        <input id="q9" type="checkbox" class="panel">
+                        <div class="plus">+</div>
+                        <label for="q9" class="panel-title">What is included in our rooms?x</label>
+                        <div class="panel-content">
+                            Our rooms include a vast array of utilities to make your stay enjoyable. Feel free to
+                            consult our Hotel rooms and Amenities pages to learn more.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Start Join Us Section -->
+
+    <!-- Start Footer -->
+    <section class="container-fluid bg-dark-subtle mt-5">
+        <div class="row text-dark mt-3">
+            <div class="col-12 col-lg-4 mt-3">
+                <img src="../assets/img/logo.png" alt="" class="img-fluid footer_logo p-2">
+                <h2 class="footer_name p-2">Hotel Yangon</h2>
+                <p class="p-2 rounded">
+                    <i class="fa-brands fa-square-facebook fa-2x me-2"></i>
+                    <i class="fa-brands fa-instagram fa-2x me-2"></i>
+                    <i class="fa-brands fa-youtube fa-2x me-2"></i>
+                </p>
+            </div>
+            <div class="col-12 col-lg-4 mt-3">
+                <a href="../index.html" class="d-block text-decoration-none text-dark py-2 px-lg-5">Home</a>
+                <a href="rooms.html" class="d-block text-decoration-none text-dark py-2 px-lg-5">Room</a>
+                <a href="./packages.html" class="d-block text-decoration-none text-dark py-2 px-lg-5">Packages</a>
+                <a href="./facilitiesandservices.html"
+                    class="d-block text-decoration-none text-dark py-2 px-lg-5">Facilities & services</a>
+                <a href="./contact.html" class="d-block text-decoration-none text-dark py-2 px-lg-5">Contact</a>
+            </div>
+            <div class="d-none d-lg-block col-lg-4 text-center mt-5">
+                <h4>SUBSCRIBE TO OUR NWESLETTER</h4>
+                <div class="input-group mt-3">
+                    <input type="email" class="form-control" placeholder="Email address">
+                    <button class="btn btn-success" type="button">Submit</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Footer -->
+
+    <!-- bootstarp_js -->
+    <script src="../assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- fontawesome -->
+    <script src="../assets/libs/fontawesome/js/all.min.js"></script>
+    <!-- jquery -->
+    <script src="../assets/libs/jquery/jquery.min.js"></script>
+    <!-- custom_js -->
+    <script src="../js/app.js"></script>
+
+
+</body>
+
+</html>

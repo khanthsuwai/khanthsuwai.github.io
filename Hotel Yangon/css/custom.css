@@ -1,0 +1,537 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Quicksand', sans-serif;
+}
+
+h1,
+.footer_name {
+    font-family: 'Preahvihear', sans-serif;
+}
+
+:root {
+    --primary-color: #7BC04B;
+    --secondary-color: #a6a6a6;
+    --btn-color: #7BC04B;
+}
+
+div.container-fluid {
+    padding: 0px;
+}
+
+/* Start Progress */
+#progress {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    z-index: 10;
+}
+
+#progressvalues {
+    width: calc(100% - 10px);
+    height: calc(100% - 10px);
+    background-color: #fff;
+    border-radius: 50%;
+    font-weight: bold;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* End Progress */
+
+/* Start Navbar */
+
+.logo {
+    width: 120px;
+    height: 80px;
+}
+
+.btn {
+    color: white;
+    background-color: var(--primary-color);
+}
+
+.btn:hover {
+    color: black;
+    border-color: var(--primary-color);
+}
+
+.divided {
+    width: 1366px;
+    border: 1px solid var(--primary-color);
+    margin-top: 10px;
+}
+
+.navbar-nav {
+    margin-top: -10px;
+}
+
+.subnav-box {
+    display: flex;
+    justify-content: center;
+}
+
+.sub_nav:hover {
+    color: var(--btn-color);
+}
+
+.dropdown-menu {
+    --bs-dropdown-link-active-bg: var(--primary-color) !important;
+
+}
+
+.booking_btn {
+    background-color: var(--btn-color);
+    color: #fff;
+    font-size: 22px;
+    text-transform: uppercase;
+    padding: 12px 20px;
+    cursor: pointer;
+
+    border: none;
+
+    position: relative;
+}
+
+.booking_btn::before {
+    content: '';
+    width: 24px;
+    height: 24px;
+
+    position: absolute;
+    top: -5px;
+    left: -5px;
+
+    border-top: 2px solid var(--btn-color);
+    border-left: 2px solid var(--btn-color);
+
+    transition: all 0.2s;
+}
+
+.booking_btn::after {
+    content: '';
+    width: 24px;
+    height: 24px;
+
+    position: absolute;
+    bottom: -5px;
+    right: -5px;
+
+    border-bottom: 2px solid var(--btn-color);
+    border-right: 2px solid var(--btn-color);
+
+    transition: all 0.2s;
+
+}
+
+.booking_btn:hover::before,
+.booking_btn:hover::after {
+    width: 100%;
+    height: 100%;
+}
+
+/* Start Search bar */
+
+.searchbox {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: all 1s;
+    width: 40px;
+    height: 40px;
+    background: var(--primary-color);
+    box-sizing: border-box;
+    border-radius: 25px;
+    border: 4px solid var(--primary-color);
+    padding: 5px;
+}
+
+.search_bar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 32.5px;
+    line-height: 30px;
+    outline: 0;
+    border: 0;
+    display: none;
+    font-size: 1em;
+    border-radius: 20px;
+    padding: 0 20px;
+}
+
+.fa {
+    box-sizing: border-box;
+    padding: 5px;
+    width: 22.5px;
+    height: 22.5px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 1.2em;
+    transition: all 1s;
+}
+
+.searchbox:hover {
+    width: 300px;
+    cursor: pointer;
+}
+
+.searchbox:hover input {
+    display: block;
+}
+
+/* End Search bar */
+/* End Navbar */
+
+/* Start Banner Section */
+
+.booking {
+    width: 400px;
+    height: 500px;
+    border: 1px solid var(--secondary-color);
+    border-radius: 5px;
+    background-color: rgba(233, 228, 217, 0.81);
+
+    position: absolute;
+    top: 6%;
+    left: 60%;
+}
+
+/* End Banner Section */
+
+/* Start Promotion Section */
+
+@keyframes shimmer {
+    0% {
+        color: #d91c22;
+        text-shadow: 0 0 5px #d91c22, 0 0 10px #d91c22, 0 0 15px #d91c22, 0 0 20px #d91c22;
+    }
+
+    50% {
+        color: #d91c22;
+        text-shadow: 0 0 10px #d91c22, 0 0 20px #d91c22, 0 0 30px #d91c22, 0 0 40px #d91c22;
+    }
+
+    100% {
+        color: #d91c22;
+        text-shadow: 0 0 5px #d91c22, 0 0 10px #d91c22, 0 0 15px #d91c22, 0 0 20px #d91c11;
+    }
+}
+
+.promotitle {
+    font-family: 'Dancing Script', cursive;
+    animation: shimmer 1.5s infinite;
+}
+
+.price {
+    animation: shimmer 1s infinite;
+}
+
+.promobtn {
+    display: block;
+
+    color: #ffff;
+    padding: 5px 10px;
+    border: 1px solid var(--btn-color);
+    background-color: var(--btn-color);
+    border-radius: 5px;
+    text-decoration: none;
+
+    transition: all 1s;
+
+}
+
+.promobtn:hover {
+    transform: scale(1.5);
+}
+
+.promocards {
+    transition: all 0.5s;
+}
+
+.moveleft {
+    animation-name: movefromleft;
+    animation-duration: 2s;
+}
+
+.moveright {
+    animation-name: movefromright;
+    animation-duration: 2s;
+}
+
+.movebottom {
+    animation-name: movefrombottom;
+    animation-duration: 2s;
+}
+
+@keyframes movefromleft {
+    from {
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+
+@keyframes movefromright {
+    from {
+        transform: translateX(100px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+
+@keyframes movefrombottom {
+    from {
+        transform: translateY(100px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
+/* End Promotion Section */
+
+/* Start About Section */
+
+.about {
+    transition: all 0.5s;
+    padding: 40px 10px;
+    border-radius: 20px;
+}
+
+.about:hover,
+.about-img:hover {
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    transform: translateY(-20px);
+}
+
+.about-img {
+    padding: 40px;
+    border-radius: 20px;
+    transition: all 0.5s;
+}
+
+/* End About Section */
+
+/* Start Customer Section */
+.titles {
+    display: inline-block;
+    text-transform: capitalize;
+    padding: 5px 20px;
+    font-family: 'Nova Square', sans-serif;
+
+    position: relative;
+}
+
+.titles::before,
+.titles::after {
+    content: "";
+    width: 20px;
+    height: 20px;
+
+    position: absolute;
+}
+
+
+.titles::before {
+    border-left: 3px solid var(--primary-color);
+    border-bottom: 3px solid var(--primary-color);
+
+    left: 0;
+    bottom: 0;
+}
+
+.titles::after {
+    border-right: 3px solid var(--primary-color);
+    border-top: 3px solid var(--primary-color);
+
+    right: 0;
+    top: 0;
+}
+
+.single-item {
+    padding: 15px;
+    margin: 50px 15px;
+}
+
+.profile {
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.img-area {
+    margin: 0 15px 15px 15px;
+}
+
+.img-area img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 7px solid var(--primary-color);
+}
+
+.content p {
+    text-align: justify;
+}
+
+.content p span {
+    font-size: 48px;
+    margin-right: 20px;
+    color: var(--primary-color);
+}
+
+
+/* End Customer Section */
+
+/* Start Award Section */
+
+.slick-slide {
+    margin: 0px 20px;
+}
+
+.slick-slide img {
+    width: 100%;
+}
+
+.slick-slider {
+    position: relative;
+    display: block;
+    box-sizing: border-box;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-touch-callout: none;
+    -khtml-user-select: none;
+    -ms-touch-action: pan-y;
+    touch-action: pan-y;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.slick-list {
+    position: relative;
+    display: block;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+.slick-list:focus {
+    outline: none;
+}
+
+.slick-list.dragging {
+    cursor: pointer;
+    cursor: hand;
+}
+
+.slick-slider .slick-track,
+.slick-slider .slick-list {
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0);
+    -o-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+}
+
+.slick-track {
+    position: relative;
+    top: 0;
+    left: 0;
+    display: block;
+}
+
+.slick-track:before,
+.slick-track:after {
+    display: table;
+    content: '';
+}
+
+.slick-track:after {
+    clear: both;
+}
+
+.slick-loading .slick-track {
+    visibility: hidden;
+}
+
+.slick-slide {
+    display: none;
+    float: left;
+    height: 100%;
+    min-height: 1px;
+}
+
+[dir='rtl'] .slick-slide {
+    float: right;
+}
+
+.slick-slide img {
+    display: block;
+}
+
+.slick-slide.slick-loading img {
+    display: none;
+}
+
+.slick-slide.dragging img {
+    pointer-events: none;
+}
+
+.slick-initialized .slick-slide {
+    display: block;
+}
+
+.slick-loading .slick-slide {
+    visibility: hidden;
+}
+
+.slick-vertical .slick-slide {
+    display: block;
+    height: auto;
+    border: 1px solid transparent;
+}
+
+.slick-arrow.slick-hidden {
+    display: none;
+}
+
+/* End Award Section */
+
+/* Start Footer  */
+.footer_logo {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: none;
+}
+
+/* End Footer */

@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Yangon/ ROOMS</title>
+    <!-- fav icon -->
+    <link rel="shortcut icon" href="../assets/img/logo.png" type="image/x-icon" sizes="16x16">
+    <!-- bootstrap_css -->
+    <link rel="stylesheet" href="../assets/libs/bootstrap/css/bootstrap.min.css">
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="../assets/libs/fontawesome/css/all.min.css">
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Preahvihear&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nova+Square&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap" rel="stylesheet">
+    <!-- custom css -->
+    <link rel="stylesheet" href="../css/custom.css">
+    <style>
+        .room {
+            overflow: hidden;
+        }
+
+        .room_img:hover {
+            transform: scale(1.3);
+            transition-duration: 0.8s;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Start Progress -->
+    <div id="progress">
+        <span id="progressvalues"></span>
+    </div>
+    <!-- End Progress -->
+
+    <!-- Start Navbar -->
+    <nav class="navbar">
+        <div class="container-fluid">
+            <a href="#" class="navbar-brand">
+                <img src="../assets/img/logo.png" alt="" class="logo img-fluid">
+                <h1 class="float-end mt-3 ">Hotel Yangon</h1>
+            </a>
+            <ul class="nav text-white">
+                <li class="nav-item p-2 d-none d-md-block">
+                    <form action="">
+                        <input type="search" placeholder="Search here ..." class="search_bar">
+                        <i class="fa fa-search"></i>
+                    </form>
+                </li>
+                <li class="nav-item p-2 d-none d-md-block">
+                    <a href="../others/signin.html" class="btn" id="signin">Sign in/up</a>
+                </li>
+                <li class="nav-item p-2">
+                    <a href="../others/booking.html" class="btn">Book Now</a>
+                </li>
+
+                <button class="navbar-toggler d-block d-md-none" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </ul>
+        </div>
+        <hr class="divided">
+    </nav>
+
+    <div class="container subnav-box">
+        <div class="navbar-expand-md">
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-lg-4">
+                    <li class="nav-item sub_nav ">
+                        <a href="../index.html" class="nav-link px-md-3 mx-lg-4"><i
+                                class="fa-solid fa-house me-2"></i>HOME</a>
+                    </li>
+                    <li class="nav-item sub_nav">
+                        <a href="../others/rooms.html" class="nav-link px-md-3 mx-lg-4"><i
+                                class="fa-solid fa-bed me-2"></i>ROOMS</a>
+                    </li>
+                    <li class="nav-item dropdown sub_nav">
+                        <a href="../others/packages.html" class="nav-link dropdown-toggle px-md-3 mx-lg-4" type="button"
+                            data-bs-toggle="dropdown"><i class="fa-solid fa-briefcase me-2"></i>PACKAGES</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="../others/packages.html #meeting" class="dropdown-item">Meeting & Events</a>
+                            </li>
+                            <li><a href="../others/packages.html #loveshoot" class="dropdown-item">Dreamy Love Shoot</a>
+                            </li>
+                            <li><a href="../others/packages.html #weddings" class="dropdown-item">Weddings</a></li>
+                            <li><a href="../others/packages.html #honeymoon" class="dropdown-item">Honeymoon</a></li>
+                            <li><a href="../others/packages.html #celebration" class="dropdown-item">Celebration</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item sub_nav ">
+                        <a href="../others/facilitiesandservices.html" class="nav-link px-md-3 mx-lg-4"><i
+                                class="fa-solid fa-list me-2"></i>FACILITIES</a>
+                    </li>
+                    <li class="nav-item sub_nav">
+                        <a href="../others/contact.html" class="nav-link px-md-3 mx-lg-4"><i
+                                class="fa-solid fa-phone me-2"></i>CONTACT</a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- End Navbar -->
+
+    <!-- Start Rooms Section -->
+    <div class="container my-5">
+        <h3 class="titles mb-5">Accommodation</h3>
+        <div class="row row-cols-1 row-cols-lg-3">
+            <div class="col mb-3">
+                <div class="card shadow">
+                    <a href="" class="room">
+                        <img src="../assets/img/room1.jpg" alt="" class="card-img-top room_img">
+                    </a>
+                    <div class="card-body">
+                        <h4 class="fw-bold">Deluxe Room</h4>
+                        <p class="mt-2">
+                            Deluxe Suite is comfortably furnished with keycard locks, air conditioners, a mini-bar, a
+                            wide
+                            selection of TV channels with 40" LCD flat screen, weight machine and a mini-safety deposit
+                            box.
+                        </p>
+                    </div>
+                    <div class="card-footer text-center">
+                        <a href="./deluexroom.html" class="btn arrow_btn">
+                            <i class="fa-regular fa-eye fa-2x"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col mb-3">
+                <div class="card shadow">
+                    <a href="" class="room">
+                        <img src="../assets/img/room7.jpg" alt="" class="card-img-top room_img">
+                    </a>
+                    <div class="card-body">
+                        <h4 class="fw-bold">Superior Double</h4>
+                        <p class="mt-2">
+                            Wider space room with carpeted floor and a living room, superior quality room facilities,
+                            separate shower booth and bath tub with special bathroom suite, better bird's eye view.
+                        </p>
+                    </div>
+                    <div class="card-footer text-center">
+                        <a href="./deluexroom.html" class="btn arrow_btn">
+                            <i class="fa-regular fa-eye fa-2x"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col mb-3">
+                <div class="card shadow">
+                    <a href="" class="room">
+                        <img src="../assets/img/room2.jpg" alt="" class="card-img-top room_img">
+                    </a>
+                    <div class="card-body">
+                        <h4 class="fw-bold">Executive Suite</h4>
+                        <p class="mt-2">
+                            In addition to more superior quality room facilities, Executive Suite is splendidly
+                            furnished
+                            with a living room, two sets of televisions with LCD flat screen, dining room with dinner
+                            set.
+                        </p>
+                    </div>
+                    <div class="card-footer text-center">
+                        <a href="./deluexroom.html" class="btn arrow_btn">
+                            <i class="fa-regular fa-eye fa-2x"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col mb-3">
+                <div class="card shadow">
+                    <a href="" class="room">
+                        <img src="../assets/img/room4.jpg" alt="" class="card-img-top room_img">
+                    </a>
+                    <div class="card-body">
+                        <h4 class="fw-bold">Premium Room</h4>
+                        <p class="mt-2">
+                            Premium Room is comfortably furnished with keycard locks, air conditioners, a mini-bar, a
+                            wide
+                            selection of TV channels with 40" LCD flat screen, weight machine and a mini-safety deposit
+                            box.
+                        </p>
+                    </div>
+                    <div class="card-footer text-center">
+                        <a href="./deluexroom.html" class="btn arrow_btn">
+                            <i class="fa-regular fa-eye fa-2x"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col mb-3">
+                <div class="card shadow">
+                    <a href="" class="room">
+                        <img src="../assets/img/room5.jpg" alt="" class="card-img-top room_img">
+                    </a>
+                    <div class="card-body">
+                        <h4 class="fw-bold">Premium Lake View Room</h4>
+                        <p class="mt-2">
+                            Premium Lake View Room is wider space room with carpeted floor and a living room, superior
+                            quality room facilities,
+                            separate shower booth and bath tub with special bathroom suite, better bird's eye view.
+                        </p>
+                    </div>
+                    <div class="card-footer text-center">
+                        <a href="./deluexroom.html" class="btn arrow_btn">
+                            <i class="fa-regular fa-eye fa-2x"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col mb-3">
+                <div class="card">
+                    <a href="" class="room">
+                        <img src="../assets/img/room3.jpg" alt="" class="card-img-top room_img">
+                    </a>
+                    <div class="card-body">
+                        <h4 class="fw-bold">Premium Studio King Room</h4>
+                        <p class="mt-2">
+                            Premium Studio King Room is in addition to more superior quality room facilities, Executive
+                            Suite is splendidly furnished
+                            with a living room, two sets of televisions with LCD flat screen.
+                        </p>
+                    </div>
+                    <div class="card-footer text-center">
+                        <a href="./deluexroom.html" class="btn arrow_btn">
+                            <i class="fa-regular fa-eye fa-2x"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Rooms Section -->
+
+    <!-- Start Footer -->
+    <section class="container-fluid bg-dark-subtle mt-5">
+        <div class="row text-dark mt-3">
+            <div class="col-12 col-lg-4 mt-3">
+                <img src="../assets/img/logo.png" alt="" class="img-fluid footer_logo p-2">
+                <h2 class="footer_name p-2">Hotel Yangon</h2>
+                <p class="p-2 rounded">
+                    <i class="fa-brands fa-square-facebook fa-2x me-2"></i>
+                    <i class="fa-brands fa-instagram fa-2x me-2"></i>
+                    <i class="fa-brands fa-youtube fa-2x me-2"></i>
+                </p>
+            </div>
+            <div class="col-12 col-lg-4 mt-3">
+                <a href="../index.html" class="d-block text-decoration-none text-dark py-2 px-lg-5">Home</a>
+                <a href="rooms.html" class="d-block text-decoration-none text-dark py-2 px-lg-5">Room</a>
+                <a href="./packages.html" class="d-block text-decoration-none text-dark py-2 px-lg-5">Packages</a>
+                <a href="./facilitiesandservices.html"
+                    class="d-block text-decoration-none text-dark py-2 px-lg-5">Facilities & services</a>
+                <a href="./contact.html" class="d-block text-decoration-none text-dark py-2 px-lg-5">Contact</a>
+            </div>
+            <div class="d-none d-lg-block col-lg-4 text-center mt-5">
+                <h4>SUBSCRIBE TO OUR NWESLETTER</h4>
+                <div class="input-group mt-3">
+                    <input type="email" class="form-control" placeholder="Email address">
+                    <button class="btn btn-success" type="button">Submit</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Footer -->
+
+
+    <!-- bootstarp_js -->
+    <script src="../assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- fontawesome -->
+    <script src="../assets/libs/fontawesome/js/all.min.js"></script>
+    <!-- jquery -->
+    <script src="../assets/libs/jquery/jquery.min.js"></script>
+    <!-- custom_js -->
+    <script src="../js/app.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking</title>
+    <!-- favicon -->
+    <link rel="shortcut icon" href="../assets/img/logo.png" type="image/x-icon" sizes="16x16">
+    <!-- bootstrap_css -->
+    <link rel="stylesheet" href="../assets/libs/bootstrap/css/bootstrap.min.css">
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="../assets/libs/fontawesome/css/all.min.css">
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .booking {
+            width: 400px;
+            height: 500px;
+            border: 1px solid #a6a6a6;
+            border-radius: 5px;
+            background-color: rgba(233, 228, 217, 0.81);
+        }
+
+        .booking_btn {
+            background-color: #7BC04B;
+            color: #fff;
+            font-size: 22px;
+            text-transform: uppercase;
+            padding: 12px 20px;
+            cursor: pointer;
+
+            border: none;
+
+            position: relative;
+        }
+
+        .booking_btn::before {
+            content: '';
+            width: 24px;
+            height: 24px;
+
+            position: absolute;
+            top: -5px;
+            left: -5px;
+
+            border-top: 2px solid #7BC04B;
+            border-left: 2px solid #7BC04B;
+
+            transition: all 0.2s;
+        }
+
+        .booking_btn::after {
+            content: '';
+            width: 24px;
+            height: 24px;
+
+            position: absolute;
+            bottom: -5px;
+            right: -5px;
+
+            border-bottom: 2px solid #7BC04B;
+            border-right: 2px solid #7BC04B;
+
+            transition: all 0.2s;
+
+        }
+
+        .booking_btn:hover::before,
+        .booking_btn:hover::after {
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="booking" id="booking">
+        <h3 class="text-center fw-bolder">Book a Room</h3>
+        <div class="row mt-5 fw-bold">
+            <div class="col-6">
+                <p>Check-in date</p>
+                <input type="date" class="form-control">
+            </div>
+            <div class="col-6">
+                <p>Check-out date</p>
+                <input type="date" class="form-control">
+            </div>
+        </div>
+        <div class="row mt-5 fw-bold">
+            <div class="col-4">
+                <p>Rooms</p>
+                <select name="chooserooms" id="chooserooms" class="form-select">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                </select>
+            </div>
+            <div class="col-4">
+                <p>Adults</p>
+                <select name="chooseadults" id="chooseadults" class="form-select">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                </select>
+            </div>
+            <div class="col-4">
+                <p>Children</p>
+                <select name="choosechild" id="choosechild" class="form-select">
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                </select>
+            </div>
+        </div>
+        <div class="mt-4 fw-bold">
+            <p>Promotion Code</p>
+            <input type="text" name="text" id="text" placeholder="PROMO CODE" class="form-control">
+        </div>
+        <div class="text-center">
+            <button class="booking_btn mt-4" type="submit">Book Now</button>
+        </div>
+        <div class="backicon">
+            <a href="../index.html" class="text-decoration-none float-end text-dark mt-2"><i
+                    class="fa-solid fa-arrow-left"></i>
+                Back
+                to home</a>
+        </div>
+    </div>
+
+
+
+    <!-- bootstrap_js -->
+    <script src="../assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- fontawesome -->
+    <script src="../assets/libs/fontawesome/js/all.min.js"></script>
+</body>
+
+</html>

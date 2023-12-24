@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Yangon/ Facilities & Servicies</title>
+    <!-- fav icon -->
+    <link rel="shortcut icon" href="../assets/img/logo.png" type="image/x-icon" sizes="16x16">
+    <!-- bootstrap_css -->
+    <link rel="stylesheet" href="../assets/libs/bootstrap/css/bootstrap.min.css">
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="../assets/libs/fontawesome/css/all.min.css">
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Preahvihear&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nova+Square&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap" rel="stylesheet">
+    <!-- custom css -->
+    <link rel="stylesheet" href="../css/custom.css">
+    <style>
+        @keyframes bling {
+            0% {
+                color: #000;
+                text-shadow: 0 0 5px #000, 0 0 10px #000, 0 0 15px #000, 0 0 20px #000;
+            }
+
+            50% {
+                color: #000;
+                text-shadow: 0 0 10px #000, 0 0 20px #000, 0 0 30px #000, 0 0 40px #000;
+            }
+
+            100% {
+                color: #000;
+                text-shadow: 0 0 5px #000, 0 0 10px #000, 0 0 15px #000, 0 0 20px #000;
+            }
+        }
+
+        .carousel_title {
+            font-size: 60px;
+            animation: bling 1.5s infinite;
+        }
+
+        .act_boxes {
+            overflow: hidden;
+            position: relative;
+        }
+
+        .act_boxes img {
+            width: 100%;
+            object-fit: cover;
+            transition: transform 0.5s;
+
+        }
+
+        .act_contents {
+            width: 80%;
+            height: 100%;
+            background-color: #fff;
+            text-align: center;
+
+            position: absolute;
+            bottom: -90%;
+            left: 10%;
+
+            transition: all 0.5s;
+        }
+
+        .act_contents a {
+            display: inline-block;
+            background-color: #099C8D;
+            color: #fff;
+            font-size: 14px;
+            text-decoration: none;
+            padding: 10px 15px;
+            margin-top: 10px;
+            border-radius: 20px;
+            opacity: 0;
+
+            transition: all 0.5s;
+        }
+
+        .act_boxes:hover .act_contents {
+            width: 100%;
+            height: 60%;
+
+            left: 0;
+            bottom: 0;
+        }
+
+        .act_boxes:hover a {
+            opacity: 1;
+            transition-delay: 0.3s;
+        }
+
+        .act_boxes:hover img {
+            transform: scale(1.2);
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Start Progress -->
+    <div id="progress">
+        <span id="progressvalues"></span>
+    </div>
+    <!-- End Progress -->
+
+    <!-- Start Navbar -->
+    <nav class="navbar">
+        <div class="container-fluid">
+            <a href="#" class="navbar-brand">
+                <img src="../assets/img/logo.png" alt="" class="logo img-fluid">
+                <h1 class="float-end mt-3 ">Hotel Yangon</h1>
+            </a>
+            <ul class="nav text-white">
+                <li class="nav-item p-2 d-none d-md-block">
+                    <form action="">
+                        <input type="search" placeholder="Search here ..." class="search_bar">
+                        <i class="fa fa-search"></i>
+                    </form>
+                </li>
+                <li class="nav-item p-2 d-none d-md-block">
+                    <a href="../others/signin.html" class="btn" id="signin">Sign in/up</a>
+                </li>
+                <li class="nav-item p-2">
+                    <a href="../others/booking.html" class="btn">Book Now</a>
+                </li>
+
+                <button class="navbar-toggler d-block d-md-none" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </ul>
+        </div>
+        <hr class="divided">
+    </nav>
+
+    <div class="container subnav-box">
+        <div class="navbar-expand-md">
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-lg-4">
+                    <li class="nav-item sub_nav ">
+                        <a href="../index.html" class="nav-link px-md-3 mx-lg-4"><i
+                                class="fa-solid fa-house me-2"></i>HOME</a>
+                    </li>
+                    <li class="nav-item sub_nav">
+                        <a href="../others/rooms.html" class="nav-link px-md-3 mx-lg-4"><i
+                                class="fa-solid fa-bed me-2"></i>ROOMS</a>
+                    </li>
+                    <li class="nav-item dropdown sub_nav">
+                        <a href="../others/packages.html" class="nav-link dropdown-toggle px-md-3 mx-lg-4" type="button"
+                            data-bs-toggle="dropdown"><i class="fa-solid fa-briefcase me-2"></i>PACKAGES</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="../others/packages.html #meeting" class="dropdown-item">Meeting & Events</a>
+                            </li>
+                            <li><a href="../others/packages.html #loveshoot" class="dropdown-item">Dreamy Love Shoot</a>
+                            </li>
+                            <li><a href="../others/packages.html #weddings" class="dropdown-item">Weddings</a></li>
+                            <li><a href="../others/packages.html #honeymoon" class="dropdown-item">Honeymoon</a></li>
+                            <li><a href="../others/packages.html #celebration" class="dropdown-item">Celebration</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item sub_nav ">
+                        <a href="../others/facilitiesandservices.html" class="nav-link px-md-3 mx-lg-4"><i
+                                class="fa-solid fa-list me-2"></i>FACILITIES</a>
+                    </li>
+                    <li class="nav-item sub_nav">
+                        <a href="../others/contact.html" class="nav-link px-md-3 mx-lg-4"><i
+                                class="fa-solid fa-phone me-2"></i>CONTACT</a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+    <!-- End Navbar -->
+
+    <!-- Start Banner -->
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3"
+                aria-label="Slide 4"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="../assets/img/fac2.jpg" class="d-block w-100" alt="">
+                <div class="carousel-caption d-none d-md-block">
+                    <h2 class="carousel_title">Free Breakfast</h2>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="../assets/img/fac3.jpg" class="d-block w-100" alt="">
+                <div class="carousel-caption d-none d-md-block">
+                    <h2 class="carousel_title">Swimming Pool</h2>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="../assets/img/fac4.jpg" class="d-block w-100" alt="">
+                <div class="carousel-caption d-none d-md-block">
+                    <h2 class="carousel_title">Pool Party</h2>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="../assets/img/fac7.jpg" class="d-block w-100" alt="">
+                <div class="carousel-caption d-none d-md-block">
+                    <h2 class="carousel_title">Spa</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Banner -->
+
+    <!-- Start Activities Section -->
+    <div class="container my-3">
+        <div class="row">
+            <div class="col-12 text-center">
+                <h2 class="titles">Activities</h2>
+                <p>
+                    The Spa located on the 4th floor will make you feel relaxed by all Asian methods of massages
+                    offering single and double rooms choice. The complete set of fitness facilities such as clean and
+                    large swimming pool, well-equipped gymnasium will guarantee your comfort and desire.
+                </p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 col-md-6 mb-3">
+                <div class="card act_boxes">
+                    <div>
+                        <img src="../assets/img/spa1.jpg" alt="" class="img-fluid">
+                    </div>
+                    <div class="act_contents">
+                        <h3>Spa</h3>
+                        <p>It's luxurious and clean space where tourists relieve their stress with full-body massage and
+                            back, shoulder, foot massages, facial treatment, waxing services.</p>
+                        <a href="../others/contact.html"><i class="fa-solid fa-phone"></i>Contact</a>
+                        <a href="#"><i class="fa-solid fa-heart"></i>Support</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 mb-3">
+                <div class="card act_boxes">
+                    <div>
+                        <img src="../assets/img/pool2.jpg" alt="" class="img-fluid">
+                    </div>
+                    <div class="act_contents">
+                        <h3>Swimming Pool</h3>
+                        <p>Fitted with the latest equipment and located in a luxurious and modern complex with fine lake
+                            views, our fitness center provides the basis of a healthy and relaxing stay.</p>
+                        <a href="../others/contact.html"><i class="fa-solid fa-phone"></i>Contact</a>
+                        <a href="#"><i class="fa-solid fa-heart"></i>Support</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 mb-3">
+                <div class="card act_boxes">
+                    <div>
+                        <img src="../assets/img/gym.jpg" alt="" class="img-fluid">
+                    </div>
+                    <div class="act_contents">
+                        <h3>Gym</h3>
+                        <p>Fitted with the latest equipment and located in a luxurious and modern complex with fine lake
+                            views, our fitness center provides the basis of a healthy and relaxing stay.</p>
+                        <a href="../others/contact.html"><i class="fa-solid fa-phone"></i>Contact</a>
+                        <a href="#"><i class="fa-solid fa-heart"></i>Support</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 mb-3">
+                <div class="card act_boxes">
+                    <div>
+                        <img src="../assets/img/goft.jpg" alt="" class="img-fluid">
+                    </div>
+                    <div class="act_contents">
+                        <h3>Screen Golf Lounge</h3>
+                        <p>Fully equipped with state-of-art golf simulator and facilities. With three foresight
+                            simulators, Hotel Yangon's Screen Golf offers guests.</p>
+                        <a href="../others/contact.html"><i class="fa-solid fa-phone"></i>Contact</a>
+                        <a href="#"><i class="fa-solid fa-heart"></i>Support</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Activities Section -->
+
+    <!-- Start Facilities & Services -->
+    <div class="container my-3">
+        <div class="row">
+            <h3 class="my-3">Facilities and Services</h3>
+            <div class="col-12 col-md-3">
+                <h5 class="my-3">Internet access</h5>
+                <p>
+                    <i class="fa-solid fa-wifi"></i>
+                    <small>Free Wifi in all rooms!</small>
+                </p>
+                <p>
+                    <i class="fa-solid fa-globe"></i>
+                    <small>Internet</small>
+                </p>
+                <p>
+                    <i class="fa-solid fa-wifi"></i>
+                    Wi-Fi in public areas
+                </p>
+
+            </div>
+            <div class="col-12 col-md-3">
+                <h5 class="my-3">Cleanliness and safety</h5>
+                <p>
+                    <i class="fa-regular fa-circle-check"></i>
+                    <small>Body thermometer</small>
+                </p>
+                <p>
+                    <i class="fa-regular fa-circle-check"></i>
+                    <small>Daily disinfection in all rooms</small>
+                </p>
+                <p>
+                    <i class="fa-regular fa-circle-check"></i>
+                    <small>Daily disinfection in common areas</small>
+                </p>
+                <p>
+                    <i class="fa-regular fa-circle-check"></i>
+                    <small>Face coverings on staff</small>
+                </p>
+                <p>
+                    <i class="fa-regular fa-circle-check"></i>
+                    <small>Free face masks</small>
+                </p>
+                <p>
+                    <i class="fa-regular fa-circle-check"></i>
+                    <small>Hand sanitizer</small>
+                </p>
+                <p>
+                    <i class="fa-regular fa-circle-check"></i>
+                    <small>Physical distance of at least 1 meter</small>
+                </p>
+                <p>
+                    <i class="fa-regular fa-circle-check"></i>
+                    <small>Temperature check for guests and</small>
+                </p>
+            </div>
+            <div class="col-12 col-md-3">
+                <h5 class="my-3">Dining,drinking,and snacking</h5>
+                <p>
+                    <i class="fa-solid fa-wine-glass"></i>
+                    <small>Bar</small>
+                </p>
+                <p>
+                    <i class="fa-solid fa-bread-slice"></i>
+                    <small>Breakfast [buffet]</small>
+                </p>
+                <p>
+                    <i class="fa-solid fa-mug-saucer"></i>
+                    <small>Coffee Shop</small>
+                </p>
+                <p>
+                    <i class="fa-solid fa-kitchen-set"></i>
+                    <small>Kitchen</small>
+                </p>
+                <p>
+                    <i class="fa-solid fa-beer-mug-empty"></i>
+                    <small>Poolside bar</small>
+                </p>
+                <p>
+                    <i class="fa-solid fa-utensils"></i>
+                    <small>Restaurant [hala]</small>
+                </p>
+                <p>
+                    <i class="fa-solid fa-people-carry-box"></i>
+                    <small>Room service</small>
+                </p>
+            </div>
+            <div class="col-12 col-md-3">
+                <h5 class="my-3">Services and facilities</h5>
+                <p>
+                    <i class="fa-solid fa-clock"></i>
+                    <small>24-hour reception</small>
+                </p>
+                <p>
+                    <i class="fa-regular fa-circle-check"></i>
+                    <small>Laundry service</small>
+                </p>
+                <p>
+                    <i class="fa-solid fa-cart-flatbed-suitcase"></i>
+                    <small>Luggage service</small>
+                </p>
+                <p>
+                    <i class="fa-solid fa-smoking"></i>
+                    <small>Smoking area</small>
+                </p>
+                <p>
+                    <i class="fa-solid fa-shield-heart"></i>
+                    <small>safe</small>
+                </p>
+                <p>
+                    <i class="fa-solid fa-car"></i>
+                    <small>private car park</small>
+                </p>
+                <p>
+                    <i class="fa-solid fa-paw"></i>
+                    <del>Pets allowed</del>
+                </p>
+            </div>
+        </div>
+    </div>
+    <!-- End Facilities & Services -->
+
+    <!-- Start Footer -->
+    <section class="container-fluid bg-dark-subtle mt-5">
+        <div class="row text-dark mt-3">
+            <div class="col-12 col-lg-4 mt-3">
+                <img src="../assets/img/logo.png" alt="" class="img-fluid footer_logo p-2">
+                <h2 class="footer_name p-2">Hotel Yangon</h2>
+                <p class="p-2 rounded">
+                    <i class="fa-brands fa-square-facebook fa-2x me-2"></i>
+                    <i class="fa-brands fa-instagram fa-2x me-2"></i>
+                    <i class="fa-brands fa-youtube fa-2x me-2"></i>
+                </p>
+            </div>
+            <div class="col-12 col-lg-4 mt-3">
+                <a href="../index.html" class="d-block text-decoration-none text-dark py-2 px-lg-5">Home</a>
+                <a href="rooms.html" class="d-block text-decoration-none text-dark py-2 px-lg-5">Room</a>
+                <a href="./packages.html" class="d-block text-decoration-none text-dark py-2 px-lg-5">Packages</a>
+                <a href="./facilitiesandservices.html"
+                    class="d-block text-decoration-none text-dark py-2 px-lg-5">Facilities & services</a>
+                <a href="./contact.html" class="d-block text-decoration-none text-dark py-2 px-lg-5">Contact</a>
+            </div>
+            <div class="d-none d-lg-block col-lg-4 text-center mt-5">
+                <h4>SUBSCRIBE TO OUR NWESLETTER</h4>
+                <div class="input-group mt-3">
+                    <input type="email" class="form-control" placeholder="Email address">
+                    <button class="btn btn-success" type="button">Submit</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Footer -->
+
+
+
+    <!-- bootstarp_js -->
+    <script src="../assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- fontawesome -->
+    <script src="../assets/libs/fontawesome/js/all.min.js"></script>
+    <!-- jquery -->
+    <script src="../assets/libs/jquery/jquery.min.js"></script>
+    <!-- custom_js -->
+    <script src="../js/app.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Room Facilities</title>
+    <!-- fav icon -->
+    <link rel="shortcut icon" href="../assets/img/logo.png" type="image/x-icon" sizes="16x16">
+    <!-- bootstrap_css -->
+    <link rel="stylesheet" href="../assets/libs/bootstrap/css/bootstrap.min.css">
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="../assets/libs/fontawesome/css/all.min.css">
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Preahvihear&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nova+Square&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap" rel="stylesheet">
+    <!-- custom css -->
+    <link rel="stylesheet" href="../css/custom.css">
+    <style>
+        .check-icon {
+            color: green;
+        }
+
+        .blingtext {
+            animation: shimmer 1.5s infinite;
+        }
+
+        .fromlefts {
+            animation-name: fromleft;
+            animation-duration: 5s;
+        }
+
+        .fromrights {
+            animation-name: fromright;
+            animation-duration: 5s;
+        }
+
+        @keyframes fromleft {
+            0% {
+                transform: translate(-150px);
+                opacity: 0;
+            }
+
+            100% {
+                transform: translate(0px);
+                opacity: 1;
+            }
+        }
+
+        @keyframes fromright {
+            from {
+                transform: translateX(50px);
+                opacity: 0;
+            }
+
+            to {
+                transform: translateX(0px);
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Start Progress -->
+    <div id="progress">
+        <span id="progressvalues"></span>
+    </div>
+    <!-- End Progress -->
+
+    <!-- Start Navbar -->
+    <nav class="navbar">
+        <div class="container-fluid">
+            <a href="#" class="navbar-brand">
+                <img src="../assets/img/logo.png" alt="" class="logo img-fluid">
+                <h1 class="float-end mt-3 ">Hotel Yangon</h1>
+            </a>
+            <ul class="nav text-white">
+                <li class="nav-item p-2 d-none d-md-block">
+                    <form action="">
+                        <input type="search" placeholder="Search here ..." class="search_bar">
+                        <i class="fa fa-search"></i>
+                    </form>
+                </li>
+                <li class="nav-item p-2 d-none d-md-block">
+                    <a href="../others/signin.html" class="btn" id="signin">Sign in/up</a>
+                </li>
+                <li class="nav-item p-2">
+                    <a href="../others/booking.html" class="btn">Book Now</a>
+                </li>
+
+                <button class="navbar-toggler d-block d-md-none" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </ul>
+        </div>
+        <hr class="divided">
+    </nav>
+
+    <div class="container subnav-box">
+        <div class="navbar-expand-md">
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-lg-4">
+                    <li class="nav-item sub_nav ">
+                        <a href="../index.html" class="nav-link px-md-3 mx-lg-4"><i
+                                class="fa-solid fa-house me-2"></i>HOME</a>
+                    </li>
+                    <li class="nav-item sub_nav">
+                        <a href="../others/rooms.html" class="nav-link px-md-3 mx-lg-4"><i
+                                class="fa-solid fa-bed me-2"></i>ROOMS</a>
+                    </li>
+                    <li class="nav-item dropdown sub_nav">
+                        <a href="../others/packages.html" class="nav-link dropdown-toggle px-md-3 mx-lg-4" type="button"
+                            data-bs-toggle="dropdown"><i class="fa-solid fa-briefcase me-2"></i>PACKAGES</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="../others/packages.html #meeting" class="dropdown-item">Meeting & Events</a>
+                            </li>
+                            <li><a href="../others/packages.html #loveshoot" class="dropdown-item">Dreamy Love Shoot</a>
+                            </li>
+                            <li><a href="../others/packages.html #weddings" class="dropdown-item">Weddings</a></li>
+                            <li><a href="../others/packages.html #honeymoon" class="dropdown-item">Honeymoon</a></li>
+                            <li><a href="../others/packages.html #celebration" class="dropdown-item">Celebration</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item sub_nav ">
+                        <a href="../others/facilitiesandservices.html" class="nav-link px-md-3 mx-lg-4"><i
+                                class="fa-solid fa-list me-2"></i>FACILITIES</a>
+                    </li>
+                    <li class="nav-item sub_nav">
+                        <a href="../others/contact.html" class="nav-link px-md-3 mx-lg-4"><i
+                                class="fa-solid fa-phone me-2"></i>CONTACT</a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+    <!-- End Navbar -->
+
+    <!-- Start Room Facilities -->
+    <div class="container my-3">
+        <div class="row">
+            <div class="col-12 col-md-6">
+                <img src="../assets/img/room1.jpg" alt="" class="img-fluid imgfromleft">
+            </div>
+            <div class="col-12 col-md-6">
+                <h2 class="fw-bold text-center">Deluxe Room</h2>
+                <p>
+                    Deluxe Suite is comfortably furnished with keycard locks, air conditioners, a mini-bar, a
+                    wide
+                    selection of TV channels with 40" LCD flat screen, weight machine and a mini-safety deposit
+                    box.
+                </p>
+                <h3 class="fw-bold">Facilities</h3>
+                <p>
+                    <i class="fa-solid fa-circle-check check-icon"></i>
+                    <small>keycard locks</small>
+                </p>
+                <p>
+                    <i class="fa-solid fa-circle-check check-icon"></i>
+                    <small>air-conditioners</small>
+                </p>
+                <p>
+                    <i class="fa-solid fa-circle-check check-icon"></i>
+                    <small>a mini-bar</small>
+                </p>
+                <p>
+                    <i class="fa-solid fa-circle-check check-icon"></i>
+                    <small>40" LCD with selection channel</small>
+                </p>
+            </div>
+        </div>
+
+        <div class="row my-2">
+            <div class="col-12 col-md-6">
+                <h2>Features</h2>
+                <ul class="list-group">
+                    <li class="list-group-item">Floor area of 156 sqm including balcony.</li>
+                    <li class="list-group-item">Spacious backyard and servant's quarter .</li>
+                    <li class="list-group-item">Family/study room; Built-in wardrobes in all bedrooms</li>
+                    <li class="list-group-item">En-suite bathroom in Master bedroom.</li>
+                    <li class="list-group-item">Split air-conditioning units in all bedrooms, living and dining areas.
+                    </li>
+                    <li class="list-group-item">Overhead fan in living room and all bedrooms.</li>
+                </ul>
+            </div>
+            <div class="col-12 col-md-6">
+                <img src="../assets/img/bathroom1.jpg" alt="" class="img-fluid imgfromright">
+            </div>
+        </div>
+
+        <div class="row my-3">
+            <div class="col-12 col-md-6">
+                <img src="../assets/img/tv1.jpg" alt="" class="img-fluid imgfromleft">
+            </div>
+            <div class="col-12 col-md-6">
+                <h2>Bath & Personal Care</h2>
+                <ul class="list-group">
+                    <li class="list-group-item">Washing machine and dryer.</li>
+                    <li class="list-group-item">Iron and Ironing Board.</li>
+                </ul>
+
+                <h2>Media & Entertainment</h2>
+                <ul class="list-group">
+                    <li class="list-group-item">LCD television in Master bedroom, family room and living room.</li>
+                    <li class="list-group-item">DVD player in living room.</li>
+                    <li class="list-group-item">Television and Internet outlets in all bedrooms .</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="row my-3">
+            <div class="col-12 col-md-6">
+                <p class="fs-3">
+                    <span>
+                        <i class="fa-solid fa-quote-left fa-2x"></i>
+                    </span>
+                    This is a really lovely hotel in an excellent location. The staffs
+                    were
+                    really polite and helpful from the minute we checked in to the
+                    moment we
+                    checked out. Excellent hotel!
+                </p>
+            </div>
+            <div class="col-12 col-md-6">
+                <img src="../assets/img/roomdec1.jpg" alt="" class="img-fluid imgfromright">
+            </div>
+        </div>
+
+        <div class="row my-3">
+            <h2 class="blingtext my-2">You can use these for Free</h2>
+            <div class="col-12 col-md-4">
+                <ul>
+                    <li>Slipper</li>
+                    <li>Bathroom</li>
+                    <li>Shower Cap</li>
+                    <li>Toilet</li>
+                </ul>
+            </div>
+            <div class="col-12 col-md-4">
+                <ul>
+                    <li>Body soap</li>
+                    <li>Shampoo</li>
+                    <li>Toothbrush</li>
+                    <li>Toilet paper</li>
+                </ul>
+            </div>
+            <div class="col-12 col-md-4">
+                <ul>
+                    <li>Electric kettle</li>
+                    <li>Flat-screen TV</li>
+                    <li>Room services</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- End Room Facilities -->
+
+    <!-- Start Footer -->
+    <section class="container-fluid bg-dark-subtle mt-5">
+        <div class="row text-dark mt-3">
+            <div class="col-12 col-lg-4 mt-3">
+                <img src="../assets/img/logo.png" alt="" class="img-fluid footer_logo p-2">
+                <h2 class="footer_name p-2">Hotel Yangon</h2>
+                <p class="p-2 rounded">
+                    <i class="fa-brands fa-square-facebook fa-2x me-2"></i>
+                    <i class="fa-brands fa-instagram fa-2x me-2"></i>
+                    <i class="fa-brands fa-youtube fa-2x me-2"></i>
+                </p>
+            </div>
+            <div class="col-12 col-lg-4 mt-3">
+                <a href="../index.html" class="d-block text-decoration-none text-dark py-2 px-lg-5">Home</a>
+                <a href="rooms.html" class="d-block text-decoration-none text-dark py-2 px-lg-5">Room</a>
+                <a href="./packages.html" class="d-block text-decoration-none text-dark py-2 px-lg-5">Packages</a>
+                <a href="./facilitiesandservices.html"
+                    class="d-block text-decoration-none text-dark py-2 px-lg-5">Facilities & services</a>
+                <a href="./contact.html" class="d-block text-decoration-none text-dark py-2 px-lg-5">Contact</a>
+            </div>
+            <div class="d-none d-lg-block col-lg-4 text-center mt-5">
+                <h4>SUBSCRIBE TO OUR NWESLETTER</h4>
+                <div class="input-group mt-3">
+                    <input type="email" class="form-control" placeholder="Email address">
+                    <button class="btn btn-success" type="button">Submit</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Footer -->
+
+
+    <!-- bootstarp_js -->
+    <script src="../assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- fontawesome -->
+    <script src="../assets/libs/fontawesome/js/all.min.js"></script>
+    <!-- jquery -->
+    <script src="../assets/libs/jquery/jquery.min.js"></script>
+    <!-- custom_js -->
+    <script src="../js/app.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $(window).scroll(function () {
+                let getscrolltop = $(this).scrollTop();
+                // console.log(getscrolltop);
+                if (getscrolltop >= 1) {
+                    $(".imgfromleft").addClass("fromlefts");
+                    $(".imgfromright").addClass("fromrights");
+                } else {
+                    $(".imgfromleft").removeClass("fromlefts");
+                    $(".imgfromright").removeClass("fromrights");
+                }
+            });
+        })
+    </script>
+</body>
+
+</html>

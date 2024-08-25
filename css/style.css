@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    font-family: "Nunito", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* start navbar and profile */
+
+@keyframes shimmer {
+    0% {
+        color: #557FA7;
+        text-shadow: 0 0 5px #557FA7, 0 0 10px #557FA7, 0 0 15px #557FA7, 0 0 20px #557FA7;
+    }
+
+    50% {
+        color: #557FA7;
+        text-shadow: 0 0 10px #557FA7, 0 0 20px #557FA7, 0 0 30px #557FA7, 0 0 40px #557FA7;
+    }
+
+    100% {
+        color: #557FA7;
+        text-shadow: 0 0 5px #557FA7, 0 0 10px #557FA7, 0 0 15px #557FA7, 0 0 20px #557FA7;
+    }
+}
+
+.title {
+    font-family: 'Dancing Script', cursive;
+    animation: shimmer 1.5s infinite;
+}
+
+.navs:hover {
+    border-bottom: 2px solid #557FA7;
+}
+
+.profile {
+    text-align: center;
+}
+
+.img-area img {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+}
+
+.buttons {
+    color: whitesmoke;
+    background-color: #557FA7;
+    border-radius: 30px;
+}
+
+.normal_btn {
+    color: black;
+    border: 1px solid #557FA7;
+    border-radius: 30px;
+}
+
+.normal_btn:hover {
+    color: white;
+    background-color: #557FA7;
+}
+
+.icons {
+    margin-top: 10px;
+    margin-left: 37px;
+}
+
+.icons li a {
+    color: grey;
+}
+
+.icons li a:hover {
+    color: #557FA7;
+}
+
+
+/* end navbar and profile */
+/* start about section */
+
+.about_line {
+    border-right: 1px solid grey;
+}
+
+/* end about section */
+
+.list_item {
+    list-style-type: none;
+}
+
+/* start projects section */
+
+.project {
+    overflow: hidden;
+}
+
+.project:hover {
+    color: #557FA7;
+}
+
+.project_img:hover {
+    transform: scale(1.3);
+    transition-duration: 0.8s;
+}
+
+.project_btn {
+    color: whitesmoke;
+    background-color: #557FA7;
+    border-radius: 30px;
+}
+
+.project_btn:hover {
+    color: black;
+    border: 1px solid #557FA7;
+}
+
+/* end projects section */
+
+/* start footer section */
+
+footer {
+    background-color: #557FA7;
+}
